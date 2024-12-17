@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.app.json",
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "src/shims-vue.d.ts"
+  ],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.vitest.tsbuildinfo",
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "lib": ["esnext", "dom"],
+    "types": ["node", "jsdom", "vite/client"]
+  }
+}

@@ -1,0 +1,59 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Build directories
+dist/
+build/
+
+# Environment variables
+#.env
+#.env.*.local
+
+# Editor directories and settings
+.idea/
+.vscode/
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Testing and coverage
+coverage/
+*.lcov
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+
+# Package lock files
+package-lock.json
+yarn.lock
+
+# Frontend specific
+.next/
+.nuxt/
+out/
+.eslintcache
+stylelintcache
+
+# Backend specific
+*.sqlite
+*.sqlite3
+db.sqlite
+db.sqlite3
+
+# TypeScript
+*.tsbuildinfo
+
+# Miscellaneous
+!.gitkeep

@@ -1,0 +1,104 @@
+@import './base.css';
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #0096d6;
+}
+
+/* Buscador */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.search-box {
+  width: 60%;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+  outline: none;
+}
+
+/* Resultados en grid */
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+/* Estilo de cada tarjeta */
+.album-card {
+  background: #BBD8FC;
+  border-radius: 15px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+
+.album-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.album-title{
+  color: black;
+}
+.album-info h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #00aaff;
+}
+
+.album-info p {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.album-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+}
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.blue {
+  text-decoration: none;
+  color: #0096d6;
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
